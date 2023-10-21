@@ -8,17 +8,50 @@
     <link rel="icon" href="favicon.ico" />
     <link type="text/css" rel="stylesheet" href="main.css" />
   </head>
-  <body>
-    <main>
-      <img src="h.jpg" alt="HydroSense logo" />
-      <br />
-      <br />
-      <form action="#">
-        <label for="name">Enter your question: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting"></section>
-    </main>
+  <body style="background-image: url(background.png); background-size: cover;"></body>
+    <div id="main-container">
+      <div id="menu">
+        <a href="index.html"></a><a href="riego.html" ></a><a href="detectordenutrientes.html"></a><a href="miCultivo.html"></a><a href="historial.html"></a>
+    </div>
+    <div class="header">
+        <div class="logo_header">
+            <img src="utmat.png" height="80" alt="UTMAT Logo" loading="lazy"
+                 style="margin-top: 8px;" />
+        </div>
+        <div class="list_header">
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="info.html"><li>Conocenos</li></a>
+                <a href="contactanos.html"><li>Contactanos</li></a>
+                <a href="historial.html"><li>Catálogo</li></a> 
+                <div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+
+                <script>
+                    function myFunction(x) {
+                        x.classList.toggle("change");
+                    }
+                </script>
+            </ul>
+        </div>
+    </div>
+      <main>
+        <img class="hydro" src="h.png" alt="HydroSense logo" />
+        <br />
+        <br />
+        <form action="#">
+          <label for="name">Enter your question: &nbsp;</label>
+          <input id="name" alt="Name" type="text" />
+          <button type="submit">Click Me!</button>
+        </form>
+        <section id="greeting"></section>
+      </main>
+      <div id="bottom">
+        <img class="elotio" src="elotias.png" alt="Asistente Eliotas" />
+      </div>
+    </div>
   </body>
 </html>

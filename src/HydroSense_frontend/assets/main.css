@@ -1,11 +1,106 @@
 body {
     font-family: sans-serif;
     font-size: 1.5rem;
+    height: 90vh;
+    background-image: url('background.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-img {
-    max-width: 50vw;
-    max-height: 25vw;
+#menu {
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-left: 250px;
+      padding-right: 250px;*/
+    position: fixed;
+    width: 100%;
+}
+
+.list_header ul {
+    list-style: none;
+    padding: 0;
+    overflow: auto;
+    padding-right: 30px;
+}
+
+.list_header li {
+    float: left;
+    margin-right: 30px;
+    font-size: 15px;
+}
+
+#list_header {
+    position: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: right;
+    margin-left: 750px;
+    width: 300px;
+}
+
+
+
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 20px;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+
+
+.arrow1 {
+    color: white;
+    background-color: rgb(30, 70, 44);
+    cursor: pointer;
+
+}
+
+.arrow2 {
+    color: white;
+    background-color: rgb(30, 70, 44);
+    cursor: pointer;
+
+}
+
+.list_header{
+    display: flex;
+    flex-direction:row ;
+    gap: 100px;
+    justify-content: center;
+}
+
+.hydro {
+    max-width: 30vw;
+    max-height: 15vw;
     display: block;
     margin: auto;
 }
@@ -24,6 +119,10 @@ button[type="submit"] {
     padding: 5px 20px;
     margin: 10px auto;
     float: right;
+    background-color: #167534;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
 }
 
 #greeting {
@@ -34,4 +133,16 @@ button[type="submit"] {
 
 #greeting:empty {
     display: none;
+}
+
+#bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.elotio {
+    width: 600px;
+    height: auto;
+
 }
