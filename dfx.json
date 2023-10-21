@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "HydroSense_backend": {
+      "main": "src/HydroSense_backend/main.mo",
+      "type": "motoko"
+    },
+    "HydroSense_frontend": {
+      "dependencies": [
+        "HydroSense_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/HydroSense_frontend/src/index.html"
+      },
+      "source": [
+        "src/HydroSense_frontend/assets",
+        "dist/HydroSense_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
