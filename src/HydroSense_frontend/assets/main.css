@@ -8,6 +8,10 @@ body {
     background-attachment: fixed;
 }
 
+h3{
+    color: rgb(30, 70, 44);
+}
+
 #menu {
     text-align: center;
 }
@@ -91,12 +95,12 @@ body {
 
 }
 
-.list_header{
+/*.list_header{
     display: flex;
     flex-direction:row ;
     gap: 100px;
     justify-content: center;
-}
+}*/
 
 .hydro {
     max-width: 30vw;
@@ -145,4 +149,23 @@ button[type="submit"] {
     width: 600px;
     height: auto;
 
+}
+
+#monitoreo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#g{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 50px 10px 50px;
+
+}
+
+.graph{
+    width: 400px;
 }

@@ -8,7 +8,7 @@
     <link rel="icon" href="favicon.ico" />
     <link type="text/css" rel="stylesheet" href="main.css" />
   </head>
-  <body style="background-image: url(background.png); background-size: cover;"></body>
+  <body style="background-image: url(background.png); background-size: cover; background-attachment: fixed;">
     <div id="main-container">
       <div id="menu">
         <a href="index.html"></a><a href="riego.html" ></a><a href="detectordenutrientes.html"></a><a href="miCultivo.html"></a><a href="historial.html"></a>
@@ -43,14 +43,30 @@
         <br />
         <br />
         <form action="#">
-          <label for="name">Enter your question: &nbsp;</label>
+          <label for="name">Ingresa tu pregunta: &nbsp;</label>
           <input id="name" alt="Name" type="text" />
-          <button type="submit">Click Me!</button>
+          <button type="submit">Enviar!</button>
         </form>
         <section id="greeting"></section>
       </main>
       <div id="bottom">
         <img class="elotio" src="elotias.png" alt="Asistente Eliotas" />
+      </div>
+      <div id="graficos">
+        <div id="monitoreo">  
+          <h3>Monitoreo</h3>
+        </div>
+        <div id="g">
+          <div id="datos">
+            <img class="graph" src="humedad.jpeg" alt="Monitoreo humedad" />
+          </div>
+          <div id="datos">
+            <img class="graph" src="temp.jpeg" alt="Monitoreo Temperatura" />
+          </div>
+          <div id="datos">
+            <img class="graph" src="nit.jpeg" alt="Monitoreo Nitrógeno" />
+         </div>
+        </div>
       </div>
     </div>
   </body>
